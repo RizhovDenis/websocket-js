@@ -1,0 +1,83 @@
+:root {
+    --color1: #EDC7B7;
+    --color2: #EEE2DC;
+    --color3: #BAB2B5;
+    --color4: #123C69;
+    --color5: #AC3B61;
+    --height-row: 75px;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: var(--color2);
+
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+}
+
+h2 {
+    color: var(--color4);
+    text-transform: uppercase;
+}
+
+header {
+    height: 100px;
+}
+
+footer {
+    height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    background-color: var(--color1);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 5px solid var(--color3);
+}
+
+.container .article {
+    width: 550px;
+    height: var(--height-row);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--color3);
+}
+
+.container .article .coin {
+    color: var(--color4);
+    display: flex;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.container .article .value-currency {
+    color: var(--color4);
+    display: flex;
+
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.container .article .drop-value {
+    color: var(--color5);
+}
+
+.container .article .transition {
+    transition-duration: 3s;
+    color: var(--color4);
+}
